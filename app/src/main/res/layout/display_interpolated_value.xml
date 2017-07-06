@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/general_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Interpolated Value:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/actual_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/general_display"
+        android:layout_alignStart="@+id/general_display"
+        android:layout_below="@+id/general_display"
+        android:layout_marginTop="24dp"
+        android:text="99999999"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/z_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zzzzzz"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/actual_value"
+        android:layout_alignBottom="@+id/actual_value"
+        android:layout_toRightOf="@+id/start_over"
+        android:layout_toEndOf="@+id/start_over" />
+
+    <TextView
+        android:id="@+id/x_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/actual_value"
+        android:layout_alignStart="@+id/actual_value"
+        android:layout_below="@+id/actual_value"
+        android:layout_marginTop="38dp"
+        android:text="X-Coordinate:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/x_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/x_display"
+        android:layout_alignStart="@+id/x_display"
+        android:layout_below="@+id/x_display"
+        android:layout_marginTop="18dp"
+        android:text="888888"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/x_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/x_value"
+        android:layout_alignLeft="@+id/z_units"
+        android:layout_alignStart="@+id/z_units"
+        android:text="xxxxxxx"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/y_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/x_value"
+        android:layout_alignStart="@+id/x_value"
+        android:layout_below="@+id/x_value"
+        android:layout_marginTop="26dp"
+        android:text="Y-Coordinate:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/y_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/y_display"
+        android:layout_alignStart="@+id/y_display"
+        android:layout_below="@+id/y_display"
+        android:layout_marginTop="18dp"
+        android:text="7777777"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/y_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/y_value"
+        android:layout_alignLeft="@+id/x_units"
+        android:layout_alignStart="@+id/x_units"
+        android:text="yyyyyy"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/new_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Different Point"
+        android:textSize="18sp"
+        android:onClick="useDifferentPoint"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/start_over"
+        android:layout_alignRight="@+id/general_display"
+        android:layout_alignEnd="@+id/general_display" />
+
+    <Button
+        android:id="@+id/start_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="Start Over"
+        android:onClick="startOver"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

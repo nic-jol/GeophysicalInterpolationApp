@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:text="GEOPHYSICAL INTERPOLATION APPLICATION"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:typeface="normal" />
+
+
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:onClick="startApp"
+        android:text="Start"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/AboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StartButton"
+        android:layout_alignStart="@+id/StartButton"
+        android:layout_below="@+id/StartButton"
+        android:layout_marginTop="39dp"
+        android:onClick="aboutApp"
+        android:text="About"
+        android:textSize="18sp" />
+
+
+
+
+</RelativeLayout>

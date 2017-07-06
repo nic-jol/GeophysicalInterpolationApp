@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Violet\\AndroidStudioProjects\\GeophysicalInterpolationApp\\file-Browser\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon.png",
+        "source": "C:\\Users\\Violet\\AndroidStudioProjects\\GeophysicalInterpolationApp\\file-Browser\\build\\intermediates\\bundles\\debug\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Violet\\AndroidStudioProjects\\GeophysicalInterpolationApp\\file-Browser\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\file.png",
+        "source": "C:\\Users\\Violet\\AndroidStudioProjects\\GeophysicalInterpolationApp\\file-Browser\\build\\intermediates\\bundles\\debug\\res\\drawable\\file.png"
+    },
+    {
+        "merged": "C:\\Users\\Violet\\AndroidStudioProjects\\GeophysicalInterpolationApp\\file-Browser\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\folder.png",
+        "source": "C:\\Users\\Violet\\AndroidStudioProjects\\GeophysicalInterpolationApp\\file-Browser\\build\\intermediates\\bundles\\debug\\res\\drawable\\folder.png"
+    }
+]

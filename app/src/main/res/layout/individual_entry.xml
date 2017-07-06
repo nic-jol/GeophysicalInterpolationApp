@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/measurementPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Measurement:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/general_prompt"
+        android:layout_alignLeft="@+id/z_measurement"
+        android:layout_alignStart="@+id/z_measurement"
+        android:layout_marginTop="28dp" />
+
+
+    <EditText
+        android:id="@+id/z_measurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_below="@+id/measurementPrompt"
+        android:layout_alignRight="@+id/y_measurement"
+        android:layout_alignEnd="@+id/y_measurement"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/xCoorPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="X-Coordinate:"
+        android:textSize="18sp"
+        android:layout_below="@+id/z_measurement"
+        android:layout_alignRight="@+id/measurementPrompt"
+        android:layout_alignEnd="@+id/measurementPrompt"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/x_measurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_below="@+id/xCoorPrompt"
+        android:layout_alignLeft="@+id/xCoorPrompt"
+        android:layout_alignStart="@+id/xCoorPrompt"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/yCoorPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Y-Coordinate:"
+        android:textSize="18sp"
+        android:layout_below="@+id/x_measurement"
+        android:layout_alignRight="@+id/xCoorPrompt"
+        android:layout_alignEnd="@+id/xCoorPrompt"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/y_measurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_below="@+id/yCoorPrompt"
+        android:layout_alignRight="@+id/addRepeat"
+        android:layout_alignEnd="@+id/addRepeat"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/z_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/z_measurement"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/z_measurement"
+        android:layout_toRightOf="@+id/z_measurement"
+        android:text="zzzz"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/x_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxxx"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/x_measurement"
+        android:layout_alignBottom="@+id/x_measurement"
+        android:layout_toRightOf="@+id/x_measurement"
+        android:layout_toEndOf="@+id/x_measurement" />
+
+    <TextView
+        android:id="@+id/y_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yyyyyyy"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/y_measurement"
+        android:layout_alignBottom="@+id/y_measurement"
+        android:layout_toRightOf="@+id/y_measurement"
+        android:layout_toEndOf="@+id/y_measurement" />
+
+    <Button
+        android:id="@+id/addRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Entry"
+        android:textSize="18sp"
+        android:onClick="addErase"
+        android:layout_below="@+id/y_measurement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:id="@+id/addExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Entry and Finish"
+        android:textSize="18sp"
+        android:onClick="addMoveOn"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/addRepeat"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/general_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Enter Data Point:"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

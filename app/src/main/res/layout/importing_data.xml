@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/import_shp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="importShapeFile"
+        android:text="Load Data from Shape File"
+        android:textSize="24sp"
+        android:layout_below="@+id/import_text_file"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/import_text_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="importTextFile"
+        android:text="Load Data from csv/txt File"
+        android:textSize="24sp"
+        android:layout_below="@+id/general_prompt"
+        android:layout_marginTop="32dp"
+        android:layout_alignLeft="@+id/import_shp"
+        android:layout_alignStart="@+id/import_shp"
+        android:layout_alignRight="@+id/import_shp"
+        android:layout_alignEnd="@+id/import_shp" />
+
+    <Button
+        android:id="@+id/go_back_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go back"
+        android:onClick="reenterUnits"
+        android:layout_below="@+id/BeginInterpolation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/EnterManually"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Individual Entry"
+        android:textSize="24sp"
+        android:onClick="enterIndividualEntry"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/import_shp"
+        android:layout_alignLeft="@+id/import_shp"
+        android:layout_alignStart="@+id/import_shp"
+        android:layout_alignRight="@+id/import_shp"
+        android:layout_alignEnd="@+id/import_shp" />
+
+
+    <Button
+        android:id="@+id/BeginInterpolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Interpolation"
+        android:textSize="30sp"
+        android:onClick="setUpInterpolation"
+        android:background="#191970"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/EnterManually"
+        android:layout_marginTop="66dp"
+        android:layout_alignRight="@+id/import_shp"
+        android:layout_alignEnd="@+id/import_shp"
+        android:layout_alignLeft="@+id/EnterManually"
+        android:layout_alignStart="@+id/EnterManually" />
+
+    <TextView
+        android:id="@+id/general_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Import Measured Data"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/load_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EnterManually"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="sample.txt Loaded Successfully" />
+
+</RelativeLayout>
+

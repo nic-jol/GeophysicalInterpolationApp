@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/general_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter Point to Interpolate:"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/x_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="X-Coordinate:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/general_prompt"
+        android:layout_toLeftOf="@+id/enter_more_points"
+        android:layout_toStartOf="@+id/enter_more_points" />
+
+    <EditText
+        android:id="@+id/x_interpolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/x_prompt"
+        android:layout_alignLeft="@+id/x_prompt"
+        android:layout_alignStart="@+id/x_prompt"
+        android:inputType="numberSigned|numberDecimal"/>
+
+    <TextView
+        android:id="@+id/y_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/x_interpolation"
+        android:layout_alignStart="@+id/x_interpolation"
+        android:layout_below="@+id/x_interpolation"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:text="Y-Coordinate:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/y_interpolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/y_prompt"
+        android:layout_alignLeft="@+id/y_prompt"
+        android:layout_alignStart="@+id/y_prompt" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perform Interpolation"
+        android:textSize="18sp"
+        android:onClick="performInterpolation"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/enter_more_points"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/enter_more_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="Go back"
+        android:onClick="enterMorePoints"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/x_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/x_interpolation"
+        android:layout_alignBottom="@+id/x_interpolation"
+        android:layout_toEndOf="@+id/x_interpolation"
+        android:layout_toRightOf="@+id/x_interpolation"
+        android:text="xxxxxx"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/y_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/y_interpolation"
+        android:layout_alignBottom="@+id/y_interpolation"
+        android:layout_toEndOf="@+id/y_interpolation"
+        android:layout_toRightOf="@+id/y_interpolation"
+        android:text="yyyyyy"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/regular_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data is Regular"
+        android:textSize="18sp"
+        android:layout_below="@+id/y_interpolation"
+        android:layout_alignRight="@+id/y_interpolation"
+        android:layout_alignEnd="@+id/y_interpolation"
+        android:layout_marginTop="23dp" />
+
+</RelativeLayout>
